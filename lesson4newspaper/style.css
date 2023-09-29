@@ -1,0 +1,7 @@
+h1 {
+    text-transform: capitalize;
+}
+.columns{
+    column-count: 4;
+    column-gap: 10px; 
+   }

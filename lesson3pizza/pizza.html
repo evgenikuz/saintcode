@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хочу здесь работать!</title>
+</head>
+<body>
+    <form action="https://review.ymatuhin.workers.dev" method="post">
+        <input type="hidden" id="is_human" name="is_human" value="Человек">
+        <label for="FIO">ФИО </label><input id="FIO" name="FIO" type="text"><br>
+        <label for="age">Возраст </label><input id="age" name="age" type="number"><br>
+        <label for="mobile">Номер телефона </label><input id="mobile" name="mobile" type="tel"><br>
+        <label for="email">E-mail </label><input id="email" name="email" type="email"><br>
+        <label for="vk_link">Ссылка на VK </label><input id="vk_link" name="vk_link" type="url"><br>
+        <label for="login">Придумайте логин </label><input id="login" name="login" type="text"><br>
+        <label for="password">Придумайте пароль </label><input id="password" name="password" type="password"><br>
+        <p>В каком ресторане хотите работать:</p>
+        <label><input id="kievskaya" name="restaurant" type="radio"> На Киевской</label><br>
+        <label><input id="kirovskaya" name="restaurant" type="radio"> На Кировской</label><br>
+        <label for="start_date">Дата, с которой вы сможете приступить к работе </label><input id="start_date" name="start_date" type="date"><br>
+        <label>Расскажите немного о себе: <br><textarea></textarea></label><br>
+        <label for="desire">Насколько сильно вам нужна работа? </label><input id="desire" name="wants_this_job_from_10_to_100" type="range" min="10" max="100"><br>
+        <label for="education">Образование </label><select id="education" name="education">
+            <optgroup label="Высшее">
+                <option>Высшее законченное</option>
+                <option>Высшее незаконченное</option>
+            </optgroup>
+            <optgroup label="Среднее">
+                <option>Среднее специальное</option>
+                <option>Полное среднее</option>
+                <option>Неполное среднее</option>
+            </optgroup>
+        </select><br>
+        <label for="uniform_color">Желаемый цвет формы </label><input id="uniform_color" name="uniform_color" type="color"><br>
+        <label for="uniform_size">Размер формы </label><input list="uniform_size" name="uniform_size" type="list"><br>
+        <datalist id="uniform_size">
+            <option value="XS"></option>
+            <option value="S"></option>
+            <option value="M"></option>
+            <option value="L"></option>
+            <option value="XL"></option>
+          </datalist>
+        <input id="pers_data" name="pers_data" type="checkbox"><label for="pers_data">Я согласен на обработку персональных данных</label><br>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сброс</button>
+    </form>
+</body>
+</html>
